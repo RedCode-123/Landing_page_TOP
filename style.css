@@ -1,0 +1,51 @@
+:root {
+    --darkerBlue:#1F2937;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: x-small;
+}
+
+body {
+    font-size: var(--md);
+}
+header {
+    width: 100dvw;
+    height: 50px;
+    background: var(--darkerBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header__container {
+    width: 90dvw;
+    list-style: none;
+    color: white;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+
+header .header__container li a{
+    text-decoration: none;
+}
+
+header .header__container li a:link,
+ header .header__container li a:visited {
+            color: white;
+}
+
+header .header__container .header__logo {
+   margin-right: auto;
+}
