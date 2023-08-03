@@ -1,8 +1,5 @@
 :root {
     --darkerBlue:#1F2937;
-    --sm: 1.4rem;
-    --md: 1.6rem;
-    --lg: 1.8rem;
 }
 
 * {
@@ -15,20 +12,29 @@ html {
     font-size: x-small;
 }
 
-body {
-    font-size: var(--md);
-}
-header {
+
+header,
+.hero {
     width: 100dvw;
-    height: 50px;
-    background: var(--darkerBlue);
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+header {
+    height: 50px;
+    background: var(--darkerBlue);
+    font-size: 1.8rem;
+}
+
+
+header .header__container,
+.hero .hero__container {
+    width: 90dvw;
 }
 
 header .header__container {
-    width: 90dvw;
     list-style: none;
     color: white;
     display: flex;
@@ -48,4 +54,57 @@ header .header__container li a:link,
 
 header .header__container .header__logo {
    margin-right: auto;
+   font-weight: bold;
+}
+
+.hero {
+    height: 450px;
+    background: var(--darkerBlue);
+}
+
+.hero .hero__container {
+    display: flex;
+    height: 200px;
+}
+
+.hero__container .hero__right-info,
+.hero__container .hero__left-info{
+    flex: 1;
+}
+
+
+.hero__container .hero__right-info {
+    display: flex;
+    justify-content: center;
+
+}
+.hero__container .hero__right-info img {
+    width: 450px;
+}
+
+.hero__container .hero__left-info {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.hero__container .hero__left-info h1 {
+    color: #F9FAF8;
+   font-size: 4.8rem;
+   font-weight: 900;
+}
+
+.hero__container .hero__left-info p {
+    font-size: 1.8rem;
+    color: #E5E7EB;
+}
+
+.hero__container .hero__left-info div input {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 30px;
 }
