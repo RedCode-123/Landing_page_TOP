@@ -16,7 +16,9 @@ html {
 header,
 .hero,
 .information,
-.quote {
+.quote,
+.call-to-action,
+footer {
     width: 100dvw;
     display: flex;
     justify-content: center;
@@ -34,7 +36,8 @@ header {
 header .header__container,
 .hero .hero__container ,
 .information .information__container,
-blockquote {
+blockquote,
+.call-to-action__container {
     width: 90dvw;
 }
 
@@ -164,9 +167,45 @@ text-align: center;
     text-align: center;
     font-style: italic;
     font-weight: light;
+    margin-bottom: 20px;
 }
 
 .quote blockquote footer {
     text-align: right;
     font-weight: bold;
+}
+
+.call-to-action {
+   height: 250px;
+    font-size: 1.8rem;
+}
+.call-to-action .call-to-action__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 8px;
+    height: 100px;
+}
+
+.call-to-action__container,
+.call-to-action__container input,
+footer {
+    color: #E5E7EB;
+}
+
+.call-to-action__container input {
+    background-color: #3882F6;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 10px 30px;
+    cursor: pointer;
+
+}
+body > footer {
+    background-color: var(--darkerBlue);
+    height: 50px;
+    font-size: 1.5rem;
 }
