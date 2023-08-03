@@ -14,7 +14,8 @@ html {
 
 
 header,
-.hero {
+.hero,
+.information {
     width: 100dvw;
     display: flex;
     justify-content: center;
@@ -30,7 +31,8 @@ header {
 
 
 header .header__container,
-.hero .hero__container {
+.hero .hero__container ,
+.information .information__container {
     width: 90dvw;
 }
 
@@ -107,4 +109,43 @@ header .header__container .header__logo {
     border: none;
     border-radius: 24px;
     padding: 10px 30px;
+}
+
+.information .information__container {
+    display: flex;
+   flex-flow: column nowrap;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   height: 350px;
+}
+
+.information .information__container h1 {
+    font-size: 3.6rem;
+    color: #1F2937;
+}
+
+
+.information .information__container .information__images-container {
+    display: flex;
+    gap: 20px;
+}
+
+.information .information__container .information__images-container .item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.information .information__container .information__images-container .item .box-image {
+width: 200px;
+height: 200px;
+border: 2px solid #3882F6;
+    border-radius: 16px;
+flex: auto;
+}
+
+.information .information__container .information__images-container .item .text {
+width: 200px;
+text-align: center;
 }
