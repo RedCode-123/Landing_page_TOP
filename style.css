@@ -18,7 +18,7 @@ header,
 .information,
 .quote,
 .call-to-action,
-footer {
+body > footer {
     width: 100dvw;
     display: flex;
     justify-content: center;
@@ -190,7 +190,7 @@ text-align: center;
 
 .call-to-action__container,
 .call-to-action__container input,
-footer {
+body > footer {
     color: #E5E7EB;
 }
 
@@ -204,7 +204,7 @@ footer {
     cursor: pointer;
 
 }
-body > footer {
+html > body > footer {
     background-color: var(--darkerBlue);
     height: 50px;
     font-size: 1.5rem;
