@@ -15,7 +15,8 @@ html {
 
 header,
 .hero,
-.information {
+.information,
+.quote {
     width: 100dvw;
     display: flex;
     justify-content: center;
@@ -32,7 +33,8 @@ header {
 
 header .header__container,
 .hero .hero__container ,
-.information .information__container {
+.information .information__container,
+blockquote {
     width: 90dvw;
 }
 
@@ -109,6 +111,7 @@ header .header__container .header__logo {
     border: none;
     border-radius: 24px;
     padding: 10px 30px;
+    cursor: pointer;
 }
 
 .information .information__container {
@@ -148,4 +151,22 @@ flex: auto;
 .information .information__container .information__images-container .item .text {
 width: 200px;
 text-align: center;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    height: 450px;
+}
+.quote blockquote  {
+    font-size: 36px;
+}
+.quote blockquote p {
+    text-align: center;
+    font-style: italic;
+    font-weight: light;
+}
+
+.quote blockquote footer {
+    text-align: right;
+    font-weight: bold;
 }
